@@ -1,6 +1,10 @@
-package com.edsondev26.androidapp
+package com.edsondev26.androidapp.syntax
 
 fun main(){
+    variablesFunction()
+}
+
+fun variablesFunction() {
     /**
      * Numeric Variables
      */
