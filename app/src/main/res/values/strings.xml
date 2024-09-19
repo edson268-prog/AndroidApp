@@ -3,4 +3,22 @@
     <string name="hello_world">Hello World</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
+    <string name="height">Altura</string>
+    <string name="weight">Peso</string>
+    <string name="age">Edad</string>
+    <string name="calculate">Calcular</string>
+    <string name="result">Your result</string>
+    <string name="recalculate">Re-calculate</string>
+
+    <string name="error">Error</string>
+
+    <string name="title_low_weight">Low weight</string>
+    <string name="description_low_weight">You are below optimal for your weight and height.</string>
+    <string name="title_normal_weight">Normal weight</string>
+    <string name="description_normal_weight">You are in optimal condition for your weight and height.</string>
+    <string name="title_over_weight">Over weight</string>
+    <string name="description_over_weight">You are over optimal for your weight and height.</string>
+    <string name="title_obesity">Obesity</string>
+    <string name="description_title_obesity">You are WAY above what is optimal for your weight and height.</string>
+
 </resources>

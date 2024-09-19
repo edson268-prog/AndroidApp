@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AndroidApp"
         tools:targetApi="31">
         <activity
+            android:name=".bmicalculator.ResultBMIActivity"
+            android:exported="false" />
+        <activity
             android:name=".bmicalculator.mbiCalculatorActivity"
             android:exported="false" />
         <activity
@@ -26,12 +29,10 @@
         </activity>
         <activity
             android:name=".firstapp.ResultActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".firstapp.FirstAppActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
