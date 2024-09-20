@@ -9,7 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.edsondev26.androidapp.bmicalculator.mbiCalculatorActivity
 import com.edsondev26.androidapp.firstapp.FirstAppActivity
-import com.edsondev26.androidapp.firstapp.ResultActivity
+import com.edsondev26.androidapp.todoapp.TodoAppActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,8 +24,10 @@ class MenuActivity : AppCompatActivity() {
 
         val btnFirstApp = findViewById<AppCompatButton>(R.id.btnFirstApp)
         val btnBMIApp = findViewById<AppCompatButton>(R.id.btnBMIApp)
+        val btnTODOApp = findViewById<AppCompatButton>(R.id.btnTODOApp)
         btnFirstApp.setOnClickListener { navigateToFirstApp() }
         btnBMIApp.setOnClickListener { navigateToBMIApp() }
+        btnTODOApp.setOnClickListener { navigateToTODOApp() }
     }
 
     private fun navigateToBMIApp() {
@@ -35,6 +37,11 @@ class MenuActivity : AppCompatActivity() {
 
     private fun navigateToFirstApp() {
         val intent = Intent(this, FirstAppActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToTODOApp() {
+        val intent = Intent(this, TodoAppActivity::class.java)
         startActivity(intent)
     }
 }

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">AndroidApp</string>
     <string name="hello_world">Hello World</string>
+
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="height">Altura</string>
@@ -9,9 +10,7 @@
     <string name="calculate">Calcular</string>
     <string name="result">Your result</string>
     <string name="recalculate">Re-calculate</string>
-
     <string name="error">Error</string>
-
     <string name="title_low_weight">Low weight</string>
     <string name="description_low_weight">You are below optimal for your weight and height.</string>
     <string name="title_normal_weight">Normal weight</string>
@@ -20,5 +19,17 @@
     <string name="description_over_weight">You are over optimal for your weight and height.</string>
     <string name="title_obesity">Obesity</string>
     <string name="description_title_obesity">You are WAY above what is optimal for your weight and height.</string>
+
+    <string name="todo_Welcome">Welcome Edson!!</string>
+    <string name="todo_categories">Categories</string>
+    <string name="todo_tasks">Tasks</string>
+    <string name="todo_add_task">Add a task</string>
+    <string name="todo_dialog_add_task_button">Create Task</string>
+    <string name="todo_dialog_business_category">Business</string>
+    <string name="todo_dialog_personal_category">Personal</string>
+    <string name="todo_dialog_other_category">Other</string>
+    <string name="first_app">First App</string>
+    <string name="bmi_app">bmi app</string>
+    <string name="todo_app">todo app</string>
 
 </resources>
