@@ -16,7 +16,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="16dp"
         android:background="@color/purple_200"
-        android:text="First App" />
+        android:text="@string/first_app" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnBMIApp"
@@ -25,6 +25,15 @@
         android:layout_gravity="center"
         android:layout_marginBottom="16dp"
         android:background="@color/purple_200"
-        android:text="BMI App" />
+        android:text="@string/bmi_app" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTODOApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="@color/purple_200"
+        android:text="@string/todo_app" />
 
 </LinearLayout>
