@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.edsondev26.androidapp.bmicalculator.mbiCalculatorActivity
 import com.edsondev26.androidapp.firstapp.FirstAppActivity
+import com.edsondev26.androidapp.superheroapp.SuperHeroListActivity
 import com.edsondev26.androidapp.todoapp.TodoAppActivity
 
 class MenuActivity : AppCompatActivity() {
@@ -25,9 +26,16 @@ class MenuActivity : AppCompatActivity() {
         val btnFirstApp = findViewById<AppCompatButton>(R.id.btnFirstApp)
         val btnBMIApp = findViewById<AppCompatButton>(R.id.btnBMIApp)
         val btnTODOApp = findViewById<AppCompatButton>(R.id.btnTODOApp)
+        val btnSuperHero = findViewById<AppCompatButton>(R.id.btnSuperHero)
         btnFirstApp.setOnClickListener { navigateToFirstApp() }
         btnBMIApp.setOnClickListener { navigateToBMIApp() }
         btnTODOApp.setOnClickListener { navigateToTODOApp() }
+        btnSuperHero.setOnClickListener { navigateToSuperHeroApp() }
+    }
+
+    private fun navigateToSuperHeroApp() {
+        val intent = Intent(this, SuperHeroListActivity::class.java)
+        startActivity(intent)
     }
 
     private fun navigateToBMIApp() {
