@@ -32,4 +32,12 @@
     <string name="bmi_app">bmi app</string>
     <string name="todo_app">todo app</string>
 
+    <string name="super_hero">Super hero app</string>
+    <string name="super_hero_stat_Intelligence">Intelligence</string>
+    <string name="super_hero_stat_Strenght">Strenght</string>
+    <string name="super_hero_stat_Speed">Speed</string>
+    <string name="super_hero_stat_Durability">Durability</string>
+    <string name="super_hero_stat_Power">Power</string>
+    <string name="super_hero_stat_Combat">Combat</string>
+
 </resources>
