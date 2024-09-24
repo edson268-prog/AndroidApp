@@ -39,5 +39,12 @@
     <string name="super_hero_stat_Durability">Durability</string>
     <string name="super_hero_stat_Power">Power</string>
     <string name="super_hero_stat_Combat">Combat</string>
+    <string name="settings">Settings</string>
+    <string name="settings_dark_mode">Dark Mode</string>
+    <string name="settings_dark_mode_desc">Activate dark mode for a visual change</string>
+    <string name="settings_bluetooth">Activate Bluetooth</string>
+    <string name="settings_bluetooth_desc">Activate bluetooth to share data</string>
+    <string name="settings_vibrate">Vibrate for calls</string>
+    <string name="settings_volume">Control volume</string>
 
 </resources>
