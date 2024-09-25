@@ -75,13 +75,18 @@ class DetailSuperheroActivity : AppCompatActivity() {
     }
 
     private fun updateHeight(view: View, stat: String) {
+        var realStat: Float = 0f;
+        if (stat.isNotEmpty()) {
+            realStat = stat.toFloatOrNull() ?: 0f
+        }
         val params = view.layoutParams
-        params.height = pxToDp(stat.toFloat())
+        params.height = pxToDp(realStat)
         view.layoutParams = params
     }
 
-    private fun pxToDp(px:Float):Int {
-        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, px, resources.displayMetrics).roundToInt()
+    private fun pxToDp(px: Float): Int {
+        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, px, resources.displayMetrics)
+            .roundToInt()
     }
 
     private fun getRetrofit(): Retrofit {

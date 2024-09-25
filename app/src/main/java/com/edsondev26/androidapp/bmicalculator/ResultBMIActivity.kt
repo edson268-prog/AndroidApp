@@ -3,6 +3,7 @@ package com.edsondev26.androidapp.bmicalculator
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -17,6 +18,8 @@ class ResultBMIActivity : AppCompatActivity() {
     private lateinit var tvDescription:TextView
     private lateinit var btnRecalculate:Button
 
+    private lateinit var callback: OnBackPressedCallback
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -27,6 +30,13 @@ class ResultBMIActivity : AppCompatActivity() {
             insets
         }
 
+        callback = object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                finish()
+            }
+        }
+        onBackPressedDispatcher.addCallback(this, callback)
+
         val result = intent.extras?.getDouble(BMI_KEY) ?: -1.0
         initComponents()
         initUI(result)
@@ -35,7 +45,7 @@ class ResultBMIActivity : AppCompatActivity() {
 
     private fun initListeners() {
         btnRecalculate.setOnClickListener {
-            onBackPressed()
+            callback.handleOnBackPressed()
         }
     }
 
